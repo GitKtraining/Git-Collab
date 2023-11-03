@@ -125,6 +125,9 @@
                     const preview = document.getElementById('preview');
                     const image = new Image();
                     image.src = e.target.result;
+image.style.width = '200px';
+image.style.height = '200px';
+
                     preview.innerHTML = '';
                     preview.appendChild(image);
                     // Save the image to local storage
